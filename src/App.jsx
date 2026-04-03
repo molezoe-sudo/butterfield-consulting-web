@@ -159,12 +159,10 @@ function ContactForm() {
         <label>Area of Interest</label>
         <select name="service" value={form.service} onChange={handle}>
           <option value="">Select a service...</option>
-          <option>Compliance &amp; Industrial Relations</option>
-          <option>Talent Management &amp; Acquisition</option>
-          <option>Performance &amp; Development</option>
-          <option>Strategic Organisational Design</option>
-          <option>Legal Advisory</option>
-          <option>General Enquiry</option>
+          {services.map(s => (
+            <option key={s.id} value={s.title}>{s.title}</option>
+          ))}
+          <option value="General Enquiry">General Enquiry</option>
         </select>
       </div>
       <div className="form-group">
