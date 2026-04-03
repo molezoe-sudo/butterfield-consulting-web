@@ -195,7 +195,7 @@ export default function App() {
       {/* HERO */}
       <section id="home" className="section">
         <div className="wrapper">
-          <div className="hero-label">HR &amp; Industrial Relations · Legal Advisory</div>
+          <div className="hero-label">HR &amp; Industrial Relations</div>
           <h1 className="hero-title">
             Your dedicated <em>HR partner,</em><br />
             from compliance<br />to culture.
