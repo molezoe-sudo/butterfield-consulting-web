@@ -259,7 +259,7 @@ export default function App() {
               <div className="about-role">Founder &amp; Principal Consultant</div>
               <div className="about-qual">
                 LLB — University of Johannesburg<br />
-                LLM — University of Cape Town<br />
+                LLM — University of Johannesburg<br />
                 5+ years in HR &amp; IR consulting<br /><br />
                 <span className="pill">Retail</span>
                 <span className="pill">Manufacturing</span>
@@ -268,7 +268,7 @@ export default function App() {
             </div>
             <div className="glass about-card-right">
               <p className="about-bio">"People are the heartbeat of every business. When you invest in them well, everything else follows."</p>
-              <p className="about-body">Angie founded Butterfield Consulting with a clear conviction: that businesses — especially growing ones — deserve an HR partner who genuinely cares about both the organisation and the people within it. With a legal background from two of South Africa's leading universities and hands-on experience across retail, manufacturing, and software industries, she brings a rare combination of legal rigour and human warmth to every client relationship.</p>
+              <p className="about-body">Angie founded Butterfield Consulting with a clear conviction: that businesses — especially growing ones — deserve an HR partner who genuinely cares about both the organisation and the people within it. With a legal background from one of South Africa's leading universities and hands-on experience across retail, manufacturing, and software industries, she brings a rare combination of legal rigour and human warmth to every client relationship.</p>
               <p className="about-body">She works primarily with small to mid-sized businesses navigating the demands of scaling — helping them build the people structures, policies, and cultures they need to grow sustainably. Whether it's a complex disciplinary matter or a company-wide organisational redesign, Angie approaches every engagement with the same commitment: practical, thoughtful, people-first solutions.</p>
               <p className="about-body">Based in Randburg, Johannesburg, Butterfield Consulting works with clients across South Africa on both a retainer and ad-hoc basis.</p>
             </div>
