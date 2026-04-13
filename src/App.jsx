@@ -313,7 +313,7 @@ export default function App() {
               LinkedIn
             </a>
           </div>
-          <p className="footer-copy">© 2025 Butterfield Consulting. All rights reserved. | Randburg, Johannesburg, South Africa</p>
+          <p className="footer-copy">© 2026 Butterfield Consulting. All rights reserved. | Randburg, Johannesburg, South Africa</p>
         </div>
       </footer>
     </>
