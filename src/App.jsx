@@ -105,26 +105,16 @@ function ContactForm() {
     e.preventDefault()
     setStatus('sending')
     try {
-      const html = `
-        <div style="font-family:sans-serif;max-width:600px;margin:0 auto;">
-          <h2 style="color:#600082;">New Website Enquiry</h2>
-          <p><strong>Name:</strong> ${form.first_name} ${form.last_name}</p>
-          <p><strong>Email:</strong> ${form.email}</p>
-          ${form.company ? `<p><strong>Company:</strong> ${form.company}</p>` : ''}
-          ${form.service ? `<p><strong>Area of interest:</strong> ${form.service}</p>` : ''}
-          <hr style="border:none;border-top:1px solid #eee;margin:1rem 0;" />
-          <p><strong>Message:</strong></p>
-          <p style="white-space:pre-wrap;">${form.message}</p>
-        </div>
-      `
       const res = await fetch(SUPABASE_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          to: 'Angie@butterfieldco.co.za',
-          subject: `Website enquiry from ${form.first_name} ${form.last_name}`,
-          html,
-          replyTo: form.email,
+          first_name: form.first_name,
+          last_name: form.last_name,
+          email: form.email,
+          company: form.company,
+          service: form.service,
+          message: form.message,
         }),
       })
       if (!res.ok) throw new Error('Failed')
