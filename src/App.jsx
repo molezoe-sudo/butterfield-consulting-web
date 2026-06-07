@@ -121,7 +121,7 @@ function ContactForm() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          to: 'Hello@butterfieldco.co.za',
+          to: 'Angie@butterfieldco.co.za',
           subject: `Website enquiry from ${form.first_name} ${form.last_name}`,
           html,
           replyTo: form.email,
@@ -174,7 +174,7 @@ function ContactForm() {
         <div className="form-feedback success">Message sent — we'll be in touch shortly.</div>
       )}
       {status === 'error' && (
-        <div className="form-feedback error">Something went wrong. Please email us directly at Hello@butterfieldco.co.za</div>
+        <div className="form-feedback error">Something went wrong. Please email us directly at Angie@butterfieldco.co.za</div>
       )}
 
       <button type="submit" className="form-submit" disabled={status === 'sending'}>
@@ -286,7 +286,7 @@ export default function App() {
               <h3 className="contact-title">We'd love to hear from you</h3>
               <p className="contact-body">Whether you're dealing with an immediate HR challenge or planning ahead for your growing team, we're here to help.</p>
               <span className="contact-detail-label">Email</span>
-              <p className="contact-detail"><a href="mailto:Hello@butterfieldco.co.za">Hello@butterfieldco.co.za</a></p>
+              <p className="contact-detail"><a href="mailto:Angie@butterfieldco.co.za">Angie@butterfieldco.co.za</a></p>
               <span className="contact-detail-label">Location</span>
               <p className="contact-detail">Randburg, Johannesburg<br />South Africa</p>
               <span className="contact-detail-label">Availability</span>
