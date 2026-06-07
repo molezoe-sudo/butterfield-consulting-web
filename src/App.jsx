@@ -96,7 +96,7 @@ function ServiceCard({ icon, title, desc, legal }) {
 const SUPABASE_URL = 'https://tjyjnhoihomqhvgasjlv.supabase.co/functions/v1/send-email'
 
 function ContactForm() {
-  const [form, setForm] = useState({ first_name: '', last_name: '', email: '', company: '', service: '', message: '' })
+  const [form, setForm] = useState({ first_name: '', last_name: '', email: '', company: '', service: '', message: '', website: '' })
   const [status, setStatus] = useState('idle') // idle | sending | success | error
 
   const handle = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
@@ -115,11 +115,12 @@ function ContactForm() {
           company: form.company,
           service: form.service,
           message: form.message,
+          website: form.website,
         }),
       })
       if (!res.ok) throw new Error('Failed')
       setStatus('success')
-      setForm({ first_name: '', last_name: '', email: '', company: '', service: '', message: '' })
+      setForm({ first_name: '', last_name: '', email: '', company: '', service: '', message: '', website: '' })
     } catch {
       setStatus('error')
     }
@@ -127,6 +128,9 @@ function ContactForm() {
 
   return (
     <form onSubmit={submit} className="contact-form">
+      <div style={{ display: 'none' }} aria-hidden="true">
+        <label>Website<input name="website" tabIndex={-1} autoComplete="off" value={form.website} onChange={handle} /></label>
+      </div>
       <div className="form-row">
         <div className="form-group">
           <label>First Name</label>
